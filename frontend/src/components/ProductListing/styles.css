@@ -1,0 +1,30 @@
+.product-listing {
+  display: grid;
+  grid-template-columns: repeat(var(--columns, 4), 1fr);
+  gap: 24px;
+}
+
+.product-listing__empty {
+  color: var(--color-text-muted);
+  padding: 40px 0;
+  text-align: center;
+}
+
+@media (max-width: 1100px) {
+  .product-listing {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .product-listing {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-listing {
+    grid-template-columns: 1fr 1fr;
+  }
+}

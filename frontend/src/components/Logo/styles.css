@@ -1,0 +1,15 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.logo img {
+  height: 28px;
+  width: auto;
+  display: block;
+}
+
+.logo--light img {
+  height: 30px;
+}
